@@ -874,16 +874,59 @@
     <!-- HOME PAGE -->
     <div id="home" class="page active">
         <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <img src="preetamkarri.jpg" alt="Preetam Karri" class="profile-image">
-                    <div class="hero-text">
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <button class="carousel-nav prev" aria-label="Previous slide">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                
+                <div class="carousel-track">
+                    <!-- Slide 1: Profile -->
+                    <div class="carousel-slide slide-profile active">
+                        <img src="preetamkarri.jpg" alt="Preetam Karri" class="profile-image">
                         <h1>Preetam Karri</h1>
                         <p class="hero-subtitle">Strategy & Operations | Digital Transformations<br>Driving impactful solutions and sustainable growth through strategic insights</p>
                     </div>
+
+                    <!-- Slide 2: Blog -->
+                    <div class="carousel-slide slide-content">
+                        <h2>Why AI Governance is Important and How Does it Effect the Future?</h2>
+                        <button class="slide-btn" onclick="window.open('https://medium.com/@preetamkarri/ai-governance', '_blank')">Read Blog Post</button>
+                    </div>
+
+                    <!-- Slide 3: Research Report -->
+                    <div class="carousel-slide slide-content">
+                        <h2>Explore Sustainability Networks in Indian SME's</h2>
+                        <p>An in-depth analysis of how collaborative networks drive innovation and sustainability in Indian small and medium enterprises.</p>
+                        <button class="slide-btn" onclick="openModal('research-modal')">Read Full Report</button>
+                    </div>
+
+                    <!-- Slide 4: About Profile -->
+                    <div class="carousel-slide slide-content">
+                        <h2>A Balance Between Engineering and Business Management</h2>
+                        <p>Passionate about technology and AI, actively exploring opportunities in Strategy and Operations where innovation meets execution.</p>
+                        <button class="slide-btn" onclick="showPage('contact')">Let's Connect</button>
+                    </div>
                 </div>
+
+                <button class="carousel-nav next" aria-label="Next slide">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
             </div>
-        </section>
+            
+            <div class="carousel-indicators">
+                <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+                <button class="indicator" data-slide="3" aria-label="Go to slide 4"></button>
+            </div>
+        </div>
+    </section>
+
 
         <div class="container">
             <div class="what-im-doing">
